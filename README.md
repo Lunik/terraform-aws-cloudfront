@@ -22,5 +22,5 @@ The documentation was generated using [terraform-docs tool](https://github.com/t
 The generation command is the following :
 
 ```
-$ terraform-docs markdown table . > DOCS.md   
+$ terraform-docs markdown table . > DOCS.md
 ```
