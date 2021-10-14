@@ -41,6 +41,11 @@ resource "aws_cloudfront_distribution" "website_cdn" {
         forward = "none"
       }
     }
+
+    function_association {
+      event_type   = "viewer-request"
+      function_arn = aws_cloudfront_function.redirect-slash-to-index.arn
+    }
   }
 
   restrictions {
